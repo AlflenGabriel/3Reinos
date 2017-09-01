@@ -17,6 +17,7 @@ public class Principal {
 		System.out.println(s.GetQtdeTotal("ouro", governantes));
 		System.out.println(s.GetQtdeTotal("agua", governantes));
 		System.out.println(s.GetQtdeTotal("madeira", governantes));
+		
 
 	}
 
