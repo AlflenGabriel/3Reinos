@@ -31,22 +31,27 @@ public class Solucao {
 		}
 		
 		
-				
-		
-	/*	if (recurso.equals("ouro")) {
-			for (int i = 0; i < governantes.size(); i++) {
-				resultado = resultado + governantes.get(i).getOuro();
-			}				
-		} else {
-			
-		}
-					
-		
-	return resultado;
-	*/
 	}
-	
-}
+	public String getQtdeFicarVivo(String nomeGovernante, ArrayList<Governante> governantes){
 		
+		String resultado = "";
+		
+		for (int i = 0; i < governantes.size(); i++) {
+			if (governantes.get(i).getNome().equals(nomeGovernante)){
+				resultado = "Pedido do governante: " + nomeGovernante + "\n" +
+						"Ouro: " + governantes.get(i).getPedidoOuro() + "\n" +
+						"Agua: " + governantes.get(i).getPedidoAgua() + "\n" +
+						"Madeira: " + governantes.get(i).getPedidoMadeira();
+				
+			}
+		}
+		return resultado;
+	}
+
+}
+
+
+
+
 
 		
